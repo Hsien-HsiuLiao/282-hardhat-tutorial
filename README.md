@@ -14,3 +14,7 @@ npx hardhat      - to create a hardhat project
 
 npm install -D @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
 
+compile smart contract `npx hardhat compile`
+
+testing - `npx hardhat test`
+
