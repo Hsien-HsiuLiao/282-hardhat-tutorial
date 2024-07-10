@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=9Qpi80dQsGU
 
 need node v12 or above
 
+nvm use 16.20
+
 npm install -D (development dependency)
 
 npm init -y
