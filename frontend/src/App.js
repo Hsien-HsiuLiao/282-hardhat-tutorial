@@ -12,11 +12,11 @@ function App() {
     init();
   }, []);
 
-  /* if(
+  if(
     typeof token === 'undefined'
   ) {
     return 'Loading...';
-  } */
+  }
 
   return (
     <div className="App">
