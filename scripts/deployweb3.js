@@ -5,6 +5,7 @@ const fs = require('fs');
 //const {web3} = require("web3");
 
 //const web3 = new Web3();
+//https://github.com/NomicFoundation/hardhat/tree/main/packages/hardhat-web3
 require("@nomiclabs/hardhat-web3");
 //@type import artifacts from "../artifacts/contracts/Lock.sol/Lock.json";
 const artifacts = require("../artifacts/contracts/DAO.sol/DAO.json");
@@ -25,7 +26,8 @@ async function main() {
     data: artifacts.bytecode,
     //arguments: [unlockTime],
     arguments: [120, 120, 50],
-
+    //https://ethereum.stackexchange.com/questions/50554/deploying-a-contract-with-web3-js
+//https://web3js.readthedocs.io/en/v1.2.0/web3-eth-contract.html
   }).send({
     from: deployer, 
     gasPrice: '10000000000', gas: 2310334
@@ -43,7 +45,9 @@ async function main() {
 console.log(`DAO address: ${rawContract.options.address}`);
 
   const data = {
+    //https://web3js.readthedocs.io/en/v1.3.0/web3-eth-contract.html?highlight=address#id16
     address: rawContract.options.address,
+    //https://web3js.readthedocs.io/en/v1.3.0/web3-eth-contract.html?highlight=address#options-jsoninterface
    abi: /* JSON.parse( */rawContract.options.jsonInterface/* .format('json') )*/
  ///abi: JSON.parse(rawContract)
   };

@@ -5,6 +5,8 @@ require('@nomiclabs/hardhat-waffle');
 //typescript
 //import "@nomicfoundation/hardhat-web3-v4";  
 //require("@nomicfoundation/hardhat-web3-v4");
+
+//https://github.com/NomicFoundation/hardhat/tree/main/packages/hardhat-web3
 require("@nomiclabs/hardhat-web3");
 
 const INFURA_URL = '';
