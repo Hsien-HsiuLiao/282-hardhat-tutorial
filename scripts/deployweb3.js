@@ -12,6 +12,7 @@ const artifacts = require("../artifacts/contracts/DAO.sol/DAO.json");
 
 async function main() {
 
+  console.log('using hardhat-web3');
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
   const unlockTime = currentTimestampInSeconds + 60;
 
