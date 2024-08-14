@@ -30,3 +30,16 @@ deploy to rinkeby test blockchain - `npx hardhat run scripts/deploy.js --network
 
 https://www.npmjs.com/package/hardhat-deploy?activeTab=readme
 
+
+to run app:
+
+
+`npx hardhat node`
+
+`npx hardhat run scripts/deployweb3.js --network localhost`
+
+must use --network localhost, otherwise will get error WARNING: Calling an account which is not a contract
+
+`cd frontend`
+
+`yarn start`
